@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/detailsFragment">
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.mindorks.framework.numberremedies.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/action_detailsFragment_to_remediesFragment"
+            app:destination="@id/remediesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/remediesFragment"
+        android:name="com.mindorks.framework.numberremedies.RemediesFragment"
+        android:label="fragment_remedies"
+        tools:layout="@layout/fragment_remedies">
+        <action
+            android:id="@+id/action_remediesFragment_to_numberRemediesFragment"
+            app:destination="@id/numberRemediesFragment" />
+        <action
+            android:id="@+id/action_remediesFragment_to_rudrakshaFragment"
+            app:destination="@id/rudrakshaFragment" />
+        <action
+            android:id="@+id/action_remediesFragment_to_chakraFragment"
+            app:destination="@id/chakraFragment" />
+        <action
+            android:id="@+id/action_remediesFragment_to_generalRemediesFragment"
+            app:destination="@id/generalRemediesFragment" />
+        <action
+            android:id="@+id/action_remediesFragment_to_vedicMantraFragment"
+            app:destination="@id/vedicMantraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberRemediesFragment"
+        android:name="com.mindorks.framework.numberremedies.NumberRemediesFragment"
+        android:label="fragment_number_remedies"
+        tools:layout="@layout/fragment_number_remedies">
+        <action
+            android:id="@+id/action_numberRemediesFragment_to_numberRemediesTwoFragment"
+            app:destination="@id/numberRemediesTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberRemediesTwoFragment"
+        android:name="com.mindorks.framework.numberremedies.NumberRemediesTwoFragment"
+        android:label="fragment_number_remedies_two"
+        tools:layout="@layout/fragment_number_remedies_two">
+        <action
+            android:id="@+id/action_numberRemediesTwoFragment_to_numberRemediesThreeFragment"
+            app:destination="@id/numberRemediesThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberRemediesThreeFragment"
+        android:name="com.mindorks.framework.numberremedies.NumberRemediesThreeFragment"
+        android:label="fragment_number_remedies_three"
+        tools:layout="@layout/fragment_number_remedies_three" >
+        <action
+            android:id="@+id/action_numberRemediesThreeFragment_to_numberRemediesFourFragment"
+            app:destination="@id/numberRemediesFourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberRemediesFourFragment"
+        android:name="com.mindorks.framework.numberremedies.NumberRemediesFourFragment"
+        android:label="fragment_number_remedies_four"
+        tools:layout="@layout/fragment_number_remedies_four" />
+    <fragment
+        android:id="@+id/rudrakshaFragment"
+        android:name="com.mindorks.framework.numberremedies.RudrakshaFragment"
+        android:label="fragment_rudraksha"
+        tools:layout="@layout/fragment_rudraksha" >
+        <action
+            android:id="@+id/action_rudrakshaFragment_to_rudrakshaTwoFragment"
+            app:destination="@id/rudrakshaTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rudrakshaTwoFragment"
+        android:name="com.mindorks.framework.numberremedies.RudrakshaTwoFragment"
+        android:label="fragment_rudraksha_two"
+        tools:layout="@layout/fragment_rudraksha_two" >
+        <action
+            android:id="@+id/action_rudrakshaTwoFragment_to_mukhiRudrakshaFragment"
+            app:destination="@id/mukhiRudrakshaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mukhiRudrakshaFragment"
+        android:name="com.mindorks.framework.numberremedies.MukhiRudrakshaFragment"
+        android:label="fragment_mukhi_rudraksha"
+        tools:layout="@layout/fragment_mukhi_rudraksha" />
+    <fragment
+        android:id="@+id/chakraFragment"
+        android:name="com.mindorks.framework.numberremedies.ChakraFragment"
+        android:label="fragment_chakra"
+        tools:layout="@layout/fragment_chakra" >
+        <action
+            android:id="@+id/action_chakraFragment_to_chakraTwoFragment"
+            app:destination="@id/chakraTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chakraTwoFragment"
+        android:name="com.mindorks.framework.numberremedies.ChakraTwoFragment"
+        android:label="fragment_chakra_two"
+        tools:layout="@layout/fragment_chakra_two" >
+        <action
+            android:id="@+id/action_chakraTwoFragment_to_muladharaFragment"
+            app:destination="@id/muladharaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/muladharaFragment"
+        android:name="com.mindorks.framework.numberremedies.MuladharaFragment"
+        android:label="fragment_muladhara"
+        tools:layout="@layout/fragment_muladhara" />
+    <fragment
+        android:id="@+id/generalRemediesFragment"
+        android:name="com.mindorks.framework.numberremedies.GeneralRemediesFragment"
+        android:label="fragment_general_remedies"
+        tools:layout="@layout/fragment_general_remedies" >
+        <action
+            android:id="@+id/action_generalRemediesFragment_to_marriageRelationshipFragment"
+            app:destination="@id/marriageRelationshipFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vedicMantraFragment"
+        android:name="com.mindorks.framework.numberremedies.VedicMantraFragment"
+        android:label="fragment_vedic_mantra"
+        tools:layout="@layout/fragment_vedic_mantra" />
+    <fragment
+        android:id="@+id/marriageRelationshipFragment"
+        android:name="com.mindorks.framework.numberremedies.MarriageRelationshipFragment"
+        android:label="fragment_marriage_relationship"
+        tools:layout="@layout/fragment_marriage_relationship" />
+</navigation>

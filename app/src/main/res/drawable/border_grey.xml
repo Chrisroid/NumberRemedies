@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Unselected state -->
+    <item android:drawable="@drawable/border_grey_normal" android:state_selected="false" />
+
+    <!-- Selected state -->
+    <item android:drawable="@drawable/border_white" android:state_selected="true" />
+</selector>

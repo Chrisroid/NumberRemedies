@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NumberRemedies" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.NumberRemedies" parent="Base.Theme.NumberRemedies" />
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">#A9A9A9</item>
+        <item name="hintTextAppearance">@style/TextInputLayoutHintText</item>
+        <!-- Add other attributes for your TextInputLayout style -->
+    </style>
+
+    <style name="TextInputLayoutHintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">#A9A9A9</item>
+        <!-- Define text appearance for the hint -->
+    </style>
+
+    <style name="AppButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:background">@drawable/button_enabled_shape</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+</resources>

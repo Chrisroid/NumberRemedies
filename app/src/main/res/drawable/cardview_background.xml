@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Solid color for the entire background (set to transparent) -->
+    <solid android:color="#00000000" /> <!-- Transparent -->
+
+    <!-- Stroke for the edges (light purple color) -->
+    <stroke
+        android:width="2dp"
+        android:color="#A238B5" /> <!-- Replace with your light purple color -->
+
+    <corners android:radius="8dp" /> <!-- Adjust the radius as needed -->
+
+</shape>
